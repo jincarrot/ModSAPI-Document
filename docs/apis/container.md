@@ -18,7 +18,7 @@ sidebar_position: 5
 - 类型：int
 
 ### isValid {#isValid}
-- 只读*** 容器是否存在
+- ***只读*** 容器是否存在
 - 类型：bool
 
 ## 方法 {#方法}
