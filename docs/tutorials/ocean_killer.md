@@ -20,22 +20,22 @@ sidebar_position: 2
 ## 相关接口
 <details>
 
-- [事件`entityHurt`](../events/afterEvents.md#entityhurt)
+- [事件`entityHurt`](../packs/server/events/afterEvents.md#entityhurt)
     - 参数详解：
         - damageSource
             - 攻击者信息
-            - 类型：[EntityDamageSource](../apis/entity.md)
+            - 类型：[EntityDamageSource](../packs/server/apis/entity.md)
         - hurtEntity
             - 受击者
-            - 类型：[Entity](../apis/entity.md)
+            - 类型：[Entity](../packs/server/apis/entity.md)
         - damage(本例无需使用)
             - 伤害
             - 类型：int
-- [EntityDamageSource](../extra/info.md#EntityDamageSource)
+- [EntityDamageSource](../packs/server/extra/info.md#EntityDamageSource)
     - damagingEntity
         - 攻击者（可能不存在）
-        - 类型：[Entity](../apis/entity.md)
-- [Entity](../apis/entity.md) 
+        - 类型：[Entity](../packs/server/apis/entity.md)
+- [Entity](../packs/server/apis/entity.md) 
     - 属性：
         - isInWater
             - 是否处于水中

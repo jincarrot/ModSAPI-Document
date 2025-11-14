@@ -1,0 +1,8 @@
+{
+  "label": "接口文档",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "客户端接口"
+  }
+}
