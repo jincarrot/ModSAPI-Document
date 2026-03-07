@@ -103,12 +103,24 @@ const config: Config = {
             label: '接口文档',
         },
         {
+            type: 'doc',
+            position: 'left',
+            docId: 'tutorials/hello_world',
+            label: '教程',
+        },
+        {
+            type: 'doc',
+            position: 'left',
+            docId: 'extra_lib/MoreUI/intro',
+            label: '独立库',
+        },
+        {
           href: 'https://github.com/jincarrot/ModSAPI',
           label: 'GitHub',
           position: 'right',
         },
         {
-          href: 'https://yzbwdlt.pages.dev/',
+          href: 'https://mcdevdoc.nekoawa.com/',
           label: '量筒的文档',
           position: 'right',
         },

@@ -53,8 +53,6 @@ const App = () => {
       setSubtitleVisible(true);
     }, 2);
 
-
-
     fetchData()
 
     return () => {
@@ -86,7 +84,7 @@ const App = () => {
           justifyContent: 'center'
         }
       }>
-      <img src='../../img/modsapi.ico' style={
+      <img src='../../img/modsapi.ico' alt="" style={
         {
           width: "20vw",
           height: "auto",
