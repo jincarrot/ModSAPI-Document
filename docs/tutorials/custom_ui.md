@@ -1,12 +1,16 @@
 ---
-sidebar_position: 3
+sidebar_position: 10
 ---
 
 # 尝试创建自定义UI
 
+:::warning
+截至目前，该模块已移除，本教程的内容将不再准确。
+:::
+
 ## 目标
 
-使用ModSAPI的客户端UI模块，创建一个涵盖标题与背景的UI
+使用ModSAPI的客户端UI模块，创建一个涵盖标题与背景的UI。
 
 ## 解释
 
