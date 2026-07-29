@@ -1,11 +1,46 @@
+/* OreUI 风格特性面板 */
+
 .features {
   display: flex;
-  align-items: center;
-  padding: 2rem 0;
+  align-items: stretch;
+  padding: 1rem 0 3rem;
   width: 100%;
 }
 
+/* 单个特性卡片：OreUI 立体面板（上边框亮、下/左/右边框暗 + 内阴影） */
+.featureCard {
+  background-color: var(--oreui-panel-bg);
+  border-top: 2px solid var(--oreui-border-light);
+  border-right: 2px solid var(--oreui-border-dark);
+  border-bottom: 2px solid var(--oreui-border-dark);
+  border-left: 2px solid var(--oreui-border-dark);
+  box-shadow: inset 3px 3px rgba(255, 255, 255, 0.06),
+    inset -3px -3px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin: 8px;
+  padding: 1.75rem 1.25rem;
+  text-align: center;
+}
+
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  height: 120px;
+  width: 120px;
+}
+
+.featureTitle {
+  font-family: var(--oreui-font-subtitle);
+  color: var(--oreui-text);
+  letter-spacing: 1px;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.featureText {
+  font-family: var(--oreui-font-body);
+  color: var(--oreui-text-dim);
+  line-height: 1.65;
+  margin-bottom: 0;
 }

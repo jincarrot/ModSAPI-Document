@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "docusaurus",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "start", "--", "--port", "3210", "--no-open"],
+      "port": 3210
+    },
+    {
+      "name": "mcdevdoc",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "mcdevdoc-main", "run", "start", "--", "--port", "3211", "--no-open"],
+      "port": 3211
+    }
+  ]
+}

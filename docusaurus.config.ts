@@ -131,7 +131,8 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} ModSAPI, Inc. Built with Jincarrot.`,
     },
     prism: {
-      theme: prismThemes.github,
+      // OreUI 为统一深灰外观，明暗模式都使用深色代码主题
+      theme: prismThemes.dracula,
       darkTheme: prismThemes.dracula,
     },
     algolia: {

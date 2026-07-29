@@ -1,23 +1,81 @@
 /**
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
+ *
+ * OreUI 风格首页（深灰背景，无背景图片）
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+.oreuiMain {
+  background-color: var(--oreui-bg);
+  color: var(--oreui-text);
+  display: flex;
+  min-height: calc(100vh - var(--ifm-navbar-height, 60px));
+  width: 100%;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.hero {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.heroInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  animation: heroFadeIn 1.2s ease-out both;
+}
+
+.mainTitle {
+  font-family: var(--oreui-font-title);
+  font-size: clamp(3rem, 10vw, 7rem);
+  line-height: 1.1;
+  letter-spacing: 4px;
+  margin: 0;
+  color: var(--oreui-text);
+  /* 像素字描边 / 立体投影 */
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.45);
+}
+
+.subtitle {
+  font-family: var(--oreui-font-body);
+  font-size: clamp(1rem, 2.2vw, 1.35rem);
+  max-width: 760px;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+  color: var(--oreui-text-dim);
+  margin: 0;
+  padding: 0 1rem;
+  /* 预留打字机高度，避免逐字出现时布局抖动 */
+  min-height: 3.4em;
 }
 
 .buttons {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
+
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .hero {
+    padding: 2.5rem 1rem;
+  }
 }
